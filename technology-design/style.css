@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: auto 0;
+    max-width: 100%;
+    /* width: 1000px; */
+    background-color: white;
+    color: black;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo i{
+    font-size: 3rem;
+    margin: 0 0.6rem 0 0.6rem;
+}
+
+.logo h1{
+    font-size: 2rem;
+    margin: 0;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo p{
+    font-size: 1rem;
+    margin: 0;
+    color: #007ff4;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    width: 600px;
+    align-items:flex-end;
+    padding: 1rem 2rem 1rem 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+nav ul{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    list-style-type: none;
+    margin: 0;
+    font-size: 1rem;
+
+}
+
+li{
+    margin: 0 0 0 1rem;
+}
+
+li a{
+    color: black;
+    text-decoration: none;
+}
+.active{
+    color: #007ff4;
+}
+
+header{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center center;
+    height : 300px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+}
+.row{
+    margin: 1rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
+}
+.col{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem 0 1rem;
+}
+.col h2{
+    font-size: 2rem;
+    margin: 0.3rem 0 0.3rem 0;
+}
+.col p{
+    width: 300px;
+    font-size: 13px;
+    margin: 0;
+}
+
+.container a{
+    background-color: #007ff4;
+    color: white;
+    padding: .5rem 1.5rem 0.5rem 1.5rem;
+    border: none;
+    font-size: 2rem;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 768px){
+    .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .col{
+        margin: 1rem 0 1rem 0;
+    }
+    .hidden-mobile{
+        display: none;
+    }
+    .header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo{
+        margin: 1rem 0 1rem 0;
+    }
+    nav{
+        max-width: 400px;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        margin:0;
+        padding: 0;
+    }
+}
